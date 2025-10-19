@@ -17,7 +17,7 @@ public final class ItemGroups {
 
     public static final NestedItemGroup MAIN = new NestedItemGroup(
         Keys.newKey("main"),
-        new CustomItemStack(
+        CustomItemStack.create(
             Skulls.MAIN_HEAD.getPlayerHead(),
             ThemeType.MAIN.getColor() + "DankTech2"
         )
@@ -26,7 +26,7 @@ public final class ItemGroups {
     public static final SubItemGroup MATERIALS = new SubItemGroup(
         Keys.newKey("materials"),
         MAIN,
-        new CustomItemStack(
+        CustomItemStack.create(
             Skulls.CELL_9.getPlayerHead(),
             ThemeType.MAIN.getColor() + "Materials"
         )
@@ -35,7 +35,7 @@ public final class ItemGroups {
     public static final SubItemGroup PACKS = new SubItemGroup(
         Keys.newKey("packs"),
         MAIN,
-        new CustomItemStack(
+        CustomItemStack.create(
             Skulls.PACK_9.getPlayerHead(),
             ThemeType.MAIN.getColor() + "Dank and Trash Packs"
         )
@@ -44,7 +44,7 @@ public final class ItemGroups {
     public static final SubItemGroup MACHINES = new SubItemGroup(
         Keys.newKey("machines"),
         MAIN,
-        new CustomItemStack(
+        CustomItemStack.create(
             new ItemStack(Material.CRAFTING_TABLE),
             ThemeType.MAIN.getColor() + "Dank Machinery"
         )

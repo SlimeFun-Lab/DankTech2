@@ -36,9 +36,9 @@ public class Machines {
             ),
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
-                SlimefunItems.REINFORCED_PLATE, SlimefunItems.REINFORCED_PLATE, SlimefunItems.REINFORCED_PLATE,
-                SlimefunItems.REINFORCED_PLATE, SlimefunItems.RAINBOW_RUNE, SlimefunItems.REINFORCED_PLATE,
-                SlimefunItems.REINFORCED_PLATE, SlimefunItems.REINFORCED_PLATE, SlimefunItems.REINFORCED_PLATE,
+                SlimefunItems.REINFORCED_PLATE.asOne(), SlimefunItems.REINFORCED_PLATE.asOne(), SlimefunItems.REINFORCED_PLATE.asOne(),
+                SlimefunItems.REINFORCED_PLATE.asOne(), SlimefunItems.RAINBOW_RUNE.asOne(), SlimefunItems.REINFORCED_PLATE.asOne(),
+                SlimefunItems.REINFORCED_PLATE.asOne(), SlimefunItems.REINFORCED_PLATE.asOne(), SlimefunItems.REINFORCED_PLATE.asOne(),
             }
         );
 

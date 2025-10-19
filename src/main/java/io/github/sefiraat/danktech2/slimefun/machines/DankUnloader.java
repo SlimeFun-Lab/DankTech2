@@ -261,7 +261,7 @@ public class DankUnloader extends SlimefunItem {
     }
 
     private static ItemStack getSlotOnStack(int slot) {
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.LIME_STAINED_GLASS_PANE,
             ThemeType.CLICK_INFO.getColor() + "Unloading Slot " + slot,
             ThemeType.PASSIVE.getColor() + "Click to toggle unloading."
@@ -269,7 +269,7 @@ public class DankUnloader extends SlimefunItem {
     }
 
     private static ItemStack getSlotOffStack(int slot) {
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Material.RED_STAINED_GLASS_PANE,
             ThemeType.CLICK_INFO.getColor() + "Not Unloading Slot " + slot,
             ThemeType.PASSIVE.getColor() + "Click to toggle unloading."

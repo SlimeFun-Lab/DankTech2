@@ -48,14 +48,14 @@ public class DankCrafter extends SlimefunItem {
     private static final int CRAFT_SLOT = 23;
     private static final int OUTPUT_SLOT = 25;
 
-    private static final CustomItemStack CRAFT_BUTTON_STACK = new CustomItemStack(
+    private static final ItemStack CRAFT_BUTTON_STACK = CustomItemStack.create(
         Material.JUKEBOX,
         ThemeType.CLICK_INFO.getColor() + "Click to upgrade"
     );
 
     public static final RecipeType TYPE = new RecipeType(
         Keys.newKey("dank_crafter"),
-        new CustomItemStack(
+        CustomItemStack.create(
             Material.JUKEBOX,
             "Dank Upgrader",
             "Crafted within the Dank Crafter"

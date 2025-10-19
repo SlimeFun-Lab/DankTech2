@@ -23,15 +23,15 @@ public class AdminGUI extends ChestMenu {
     protected static final int PAGE_BACK_SLOT = 46;
     protected static final int PAGE_FORWARD_SLOT = 52;
 
-    protected static final ItemStack PAGE_BACK_STACK = new CustomItemStack(
+    protected static final ItemStack PAGE_BACK_STACK = CustomItemStack.create(
         Material.PAPER,
         MessageFormat.format("{0}Page Back", ThemeType.PASSIVE.getColor())
     );
-    protected static final ItemStack PAGE_FORWARD_STACK = new CustomItemStack(
+    protected static final ItemStack PAGE_FORWARD_STACK = CustomItemStack.create(
         Material.PAPER,
         MessageFormat.format("{0}Page Forward", ThemeType.PASSIVE.getColor())
     );
-    protected static final ItemStack EMPTY_STACK = new CustomItemStack(
+    protected static final ItemStack EMPTY_STACK = CustomItemStack.create(
         Material.LIGHT_GRAY_STAINED_GLASS_PANE,
         MessageFormat.format("{0}Empty", ThemeType.PASSIVE.getColor())
     );

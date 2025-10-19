@@ -32,19 +32,19 @@ public class TrashGUI extends ChestMenu {
         18, 19, 20, 21, 22, 23, 24, 25, 26, 45, 46, 47, 48, 49, 50, 51, 52, 53
     };
 
-    protected static final ItemStack EMPTY_STACK = new CustomItemStack(
+    protected static final ItemStack EMPTY_STACK = CustomItemStack.create(
         Skulls.GUI_EMPTY.getPlayerHead(),
         MessageFormat.format("{0}Slot Empty", ThemeType.PASSIVE.getColor())
     );
-    protected static final ItemStack LOCKED_STACK = new CustomItemStack(
+    protected static final ItemStack LOCKED_STACK = CustomItemStack.create(
         Material.RED_STAINED_GLASS_PANE,
         MessageFormat.format("{0}Slot Locked", ThemeType.PASSIVE.getColor())
     );
-    protected static final ItemStack INPUT_STACK = new CustomItemStack(
+    protected static final ItemStack INPUT_STACK = CustomItemStack.create(
         Material.LIGHT_GRAY_STAINED_GLASS_PANE,
         MessageFormat.format("{0}Input", ThemeType.PASSIVE.getColor())
     );
-    protected static final ItemStack INTERACTION_STACK = new CustomItemStack(
+    protected static final ItemStack INTERACTION_STACK = CustomItemStack.create(
         Skulls.GUI_WITHDRAW.getPlayerHead(), ThemeType.CLICK_INFO.getColor() + "Add/Withdraw Items",
         "",
         MessageFormat.format("{0}Left Click: {1}Clear Filter", ThemeType.CLICK_INFO.getColor(), ThemeType.PASSIVE.getColor())

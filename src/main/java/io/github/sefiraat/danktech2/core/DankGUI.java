@@ -37,15 +37,15 @@ public class DankGUI extends ChestMenu {
     };
     protected static final int INFO_SLOT = 4;
 
-    protected static final ItemStack EMPTY_STACK = new CustomItemStack(
+    protected static final ItemStack EMPTY_STACK = CustomItemStack.create(
         Skulls.GUI_EMPTY.getPlayerHead(),
         MessageFormat.format("{0}Slot Empty", ThemeType.PASSIVE.getColor())
     );
-    protected static final ItemStack LOCKED_STACK = new CustomItemStack(
+    protected static final ItemStack LOCKED_STACK = CustomItemStack.create(
         Material.RED_STAINED_GLASS_PANE,
         MessageFormat.format("{0}Slot Locked", ThemeType.PASSIVE.getColor())
     );
-    protected static final ItemStack INPUT_STACK = new CustomItemStack(
+    protected static final ItemStack INPUT_STACK = CustomItemStack.create(
         Material.LIGHT_GRAY_STAINED_GLASS_PANE,
         MessageFormat.format("{0}Input", ThemeType.PASSIVE.getColor())
     );
@@ -298,7 +298,7 @@ public class DankGUI extends ChestMenu {
     }
 
     protected static ItemStack getInteractionStack(int amount) {
-        return new CustomItemStack(
+        return CustomItemStack.create(
             Skulls.GUI_WITHDRAW.getPlayerHead(), ThemeType.CLICK_INFO.getColor() + "Add/Withdraw Items",
             "",
             MessageFormat.format("{0}Left Click: {1}Withdraw One", ThemeType.CLICK_INFO.getColor(), ThemeType.PASSIVE.getColor()),
@@ -311,7 +311,7 @@ public class DankGUI extends ChestMenu {
     }
 
     protected static ItemStack getInfoStack(ItemStack itemStack, int tier, int max) {
-        return new CustomItemStack(
+        return CustomItemStack.create(
             itemStack.clone(),
             MessageFormat.format("{0}Dank Pack Info", ThemeType.CLICK_INFO.getColor()),
             "",

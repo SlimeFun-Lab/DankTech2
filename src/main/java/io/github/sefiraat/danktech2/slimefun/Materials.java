@@ -65,7 +65,7 @@ public class Materials {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
                 cell1Material, cell1Material, cell1Material,
-                cell1Material, cell1Core, cell1Material,
+                cell1Material, cell1Core.asOne(), cell1Material,
                 cell1Material, cell1Material, cell1Material,
             }
         );
