@@ -1,7 +1,5 @@
 package io.github.sefiraat.danktech2.utils;
 
-import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerHead;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerSkin;
 import lombok.Getter;
 import org.bukkit.inventory.ItemStack;
 
@@ -57,7 +55,7 @@ public enum Skulls {
     }
 
     public ItemStack getPlayerHead() {
-        return PlayerHead.getItemStack(PlayerSkin.fromHashCode(hash));
+        return Util.fromBase64Hash(hash);
     }
 
 }
